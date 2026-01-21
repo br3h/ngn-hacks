@@ -6,11 +6,12 @@ import BackToTop from '@/src/components/BackToTop';
 import Button from '@/src/components/Button';
 import Card from '@/src/components/Card';
 import AnimatedText from '@/src/components/AnimatedText';
+import SectionHeader from '@/src/components/SectionHeader';
 import { SITE_CONFIG, CONTACT_SUBJECTS } from '@/src/lib/site';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Users, Briefcase, Mail, Instagram } from 'lucide-react';
+import { ArrowLeft, Users, Briefcase, Mail, Instagram, MapPin, Calendar, Clock, DollarSign, UtensilsCrossed, BookOpen } from 'lucide-react';
 
 export default function RegisterPage() {
   const [participantForm, setParticipantForm] = useState({
@@ -271,6 +272,72 @@ export default function RegisterPage() {
             <p className="text-xl text-gray-400">
               Join York Region's premier high school hackathon
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Details Section */}
+      <section className="relative py-16">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader title="Event Details" />
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Location</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.location}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Calendar className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Date</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.date}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Clock className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Time</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.time}</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <DollarSign className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Cost</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.cost}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <UtensilsCrossed className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Food</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.food}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <BookOpen className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Workshops</div>
+                      <ul className="space-y-1 mt-2">
+                        {SITE_CONFIG.workshops.map((workshop, index) => (
+                          <li key={index} className="text-gray-300 flex items-center">
+                            <span className="text-primary mr-2">•</span>
+                            {workshop}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>

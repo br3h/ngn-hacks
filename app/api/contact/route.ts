@@ -114,9 +114,11 @@ export async function POST(request: NextRequest) {
     await resend.emails.send({
       from: "NGN Hacks <onboarding@resend.dev>",
       to: contactEmail,
-      reply_to: email, // IMPORTANT: reply_to (not replyTo)
       subject: `[NGN Hacks] ${subject}`,
       html: emailHtml,
+      headers: {
+        "Reply-To": email,
+      },
     });
 
     return NextResponse.json({ success: true });
