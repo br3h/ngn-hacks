@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   applyUrl: 'https://forms.gle/qMXwUyFq3J15MrAZ9',
   date: 'April 23',
   location: 'Aurora Public Library',
-  time: '9 PM – 9 AM',
+  time: '9 AM – 9 PM',
   cost: 'Free',
   food: 'Free pizza',
   workshops: [
