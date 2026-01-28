@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-950 border-t border-white/5 text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
@@ -82,20 +82,27 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-              <li>
-                <Link href="/privacy" className="text-sm hover:text-white transition-colors">
-                  Privacy
-                </Link>
-              </li>
+            </ul>
+          </div>
+
+          {/* Legal & Policy */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Legal & Policy</h3>
+            <ul className="space-y-3">
               <li>
                 <Link href="/terms" className="text-sm hover:text-white transition-colors">
                   Terms
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy" className="text-sm hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Get Involved */}
           <div>
             <h3 className="text-white font-semibold mb-4">Get Involved</h3>
             <ul className="space-y-3">
