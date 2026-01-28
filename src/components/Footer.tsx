@@ -82,6 +82,16 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link href="/privacy" className="text-sm hover:text-white transition-colors">
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-sm hover:text-white transition-colors">
+                  Terms
+                </Link>
+              </li>
             </ul>
           </div>
 

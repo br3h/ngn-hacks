@@ -10,18 +10,25 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.fullName} - York Region High School Hackathon`,
-  description: `${SITE_CONFIG.fullName} is a York Region high school hackathon where 100+ students build real projects, learn fast, and present what they create.`,
+  metadataBase: new URL('https://ngnhacks.ca'),
+  title: {
+    default: 'York Region High School Hackathon',
+    template: '%s | NGN Hacks',
+  },
+  description: 'Next Generation Hacks is a York Region high school hackathon where 100+ students build real projects, learn fast, and present what they create.',
   keywords: ['hackathon', 'York Region', 'high school', 'coding', 'programming', 'students'],
   openGraph: {
-    title: `${SITE_CONFIG.fullName} - York Region High School Hackathon`,
-    description: `${SITE_CONFIG.fullName} is a York Region high school hackathon where 100+ students build real projects.`,
+    title: 'York Region High School Hackathon | NGN Hacks',
+    description: 'Next Generation Hacks is a York Region high school hackathon where 100+ students build real projects, learn fast, and present what they create.',
     type: 'website',
+    url: 'https://ngnhacks.ca',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'NGN Hacks' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_CONFIG.fullName} - York Region High School Hackathon`,
-    description: `${SITE_CONFIG.fullName} is a York Region high school hackathon where 100+ students build real projects.`,
+    title: 'York Region High School Hackathon | NGN Hacks',
+    description: 'Next Generation Hacks is a York Region high school hackathon where 100+ students build real projects.',
+    images: ['/og.png'],
   },
 };
 
