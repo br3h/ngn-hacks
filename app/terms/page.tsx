@@ -24,28 +24,28 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Eligibility & Participation</h2>
               <p>
-                Next Generation Hacks (NGN Hacks) is open to high school students in York Region and
-                surrounding areas. By registering and attending, you agree to these terms. Parents or
-                guardians may need to consent for participants under the age of majority in Ontario.
+                Next Generation Hacks (NGN Hacks) is a fully online event open to Ontario high school
+                students in Grades 9–12. By registering and participating, you agree to these terms.
+                Parents or guardians may need to consent for participants under the age of majority in
+                Ontario.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Assumption of Risk</h2>
               <p>
-                Participation in the hackathon and related activities (workshops, demos, social
-                activities) involves inherent risks. You participate voluntarily and assume all
-                risks associated with attendance, including use of venue facilities and equipment.
+                Participation in online activities (Discord, Devpost, video calls, workshops) involves
+                usual risks of internet use and screen time. You participate voluntarily and assume
+                responsibility for your own environment, equipment, and well-being while taking part.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Food & Refreshments</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">Third-Party Platforms</h2>
               <p>
-                We may provide food and refreshments, including pizza. We will try to accommodate
-                dietary restrictions where indicated at registration. We are not liable for allergic
-                reactions, illness, or other effects of consuming provided food. You are responsible
-                for knowing your own allergies and restrictions and for deciding what to consume.
+                The event uses third-party services (e.g. Discord, Devpost). Your use of those services
+                is also governed by their respective terms and privacy policies. NGN Hacks is not
+                responsible for outages, security incidents, or actions of those third parties.
               </p>
             </section>
 
@@ -53,11 +53,11 @@ export default function TermsPage() {
               <h2 className="text-xl font-semibold text-white mb-3">Release of Liability & Waiver</h2>
               <p>
                 To the fullest extent permitted by law, you release NGN Hacks, its organizers,
-                partners, sponsors, venue (Aurora Public Library), and affiliated individuals from
-                any and all claims, damages, or liabilities arising from your participation,
-                including but not limited to injury, illness, loss of property, or technical
-                failures. You waive any right to bring legal action against these parties in
-                connection with the event, except where such waiver is prohibited by law.
+                partners, sponsors, and affiliated individuals from any and all claims, damages, or
+                liabilities arising from your participation, including but not limited to technical
+                failures, data loss, or disputes with other participants. You waive any right to bring
+                legal action against these parties in connection with the event, except where such
+                waiver is prohibited by law.
               </p>
             </section>
 
@@ -72,11 +72,10 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Personal Property</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">Personal Property & Equipment</h2>
               <p>
-                You are responsible for your personal property, including laptops, devices, and
-                belongings. NGN Hacks and the venue are not liable for loss, theft, or damage to
-                personal property.
+                You are responsible for your own devices, accounts, and data. NGN Hacks is not liable
+                for loss, theft, damage, or corruption of your hardware, software, or files.
               </p>
             </section>
 
@@ -84,9 +83,10 @@ export default function TermsPage() {
               <h2 className="text-xl font-semibold text-white mb-3">Media Release</h2>
               <p>
                 By participating, you grant NGN Hacks the right to use your name, likeness, voice,
-                and project work in photos, videos, and other media for promotion, reporting, and
-                archival purposes, in any medium, without compensation. If you do not wish to be
-                photographed or filmed, you must inform a staff member at check-in.
+                and project work in recordings, streams, screenshots, and other media for promotion,
+                reporting, and archival purposes, in any medium, without compensation. If you do not
+                wish to appear in promotional materials, please inform the organizers in writing before
+                or during the event.
               </p>
             </section>
 

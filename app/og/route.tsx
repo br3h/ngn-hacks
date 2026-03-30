@@ -20,8 +20,8 @@ export async function GET() {
         <div style={{ fontSize: 56, fontWeight: 700, color: '#38bdf8', marginBottom: 12 }}>
           NGN Hacks
         </div>
-        <div style={{ fontSize: 28, color: '#94a3b8' }}>
-          York Region High School Hackathon
+        <div style={{ fontSize: 26, color: '#94a3b8', textAlign: 'center' as const, padding: '0 40px' }}>
+          48-Hour Online Hackathon · Ontario HS Students
         </div>
       </div>
     ),

@@ -19,7 +19,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Amirali Zhian',
     role: 'Chair',
-    bio: 'Co-leading NGN Hacks to bring York Region students together.',
+    bio: 'Co-leading NGN Hacks for Ontario students online.',
   },
   {
     name: 'Alex Chen',

@@ -1,6 +1,6 @@
 # NGN Hacks Website
 
-One-page website for Next Generation Hacks (NGN Hacks), a York Region high school hackathon.
+Website for Next Generation Hacks (NGN Hacks) — a student-led online hackathon for Ontario high school students.
 
 ## Setup
 
@@ -29,12 +29,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Configuration
 
-### Update Date, Location, and Registration URL
+### Update event copy
 
-Edit `src/lib/site.ts`:
-- `date`: Update the event date
-- `location`: Update the venue location
-- `registrationUrl`: Update with the actual registration URL when available
+Edit `src/lib/site.ts` for dates, format (online), platforms (Discord / Devpost), eligibility, and registration notes.
 
 ### Email Setup (Resend)
 

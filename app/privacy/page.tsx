@@ -25,18 +25,18 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-semibold text-white mb-3">Data We Collect</h2>
               <p>
                 We collect personal data you provide when registering or contacting us: name, email,
-                school, grade, experience level, team details, dietary restrictions, and any message
-                content. We may also collect technical data such as IP address, browser type, and
-                pages visited when you use our website.
+                school, grade, experience level, team details, optional accessibility or participation
+                notes, and any message content. We may also collect technical data such as IP address,
+                browser type, and pages visited when you use our website.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Purpose of Collection</h2>
               <p>
-                We use your data to run the hackathon (registration, check-in, team coordination),
-                communicate about the event, accommodate dietary needs, improve our services, and
-                respond to inquiries.
+                We use your data to run the online hackathon (registration, Discord coordination,
+                team matching where applicable), communicate about the event, accommodate accessibility
+                needs when shared, improve our services, and respond to inquiries.
               </p>
             </section>
 

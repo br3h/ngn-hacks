@@ -13,22 +13,25 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ngnhacks.ca'),
   title: {
-    default: 'York Region High School Hackathon',
+    default: '48-Hour Online Hackathon for Ontario Students',
     template: '%s | NGN Hacks',
   },
-  description: 'Next Generation Hacks is a York Region high school hackathon where 100+ students build real projects, learn fast, and present what they create.',
-  keywords: ['hackathon', 'York Region', 'high school', 'coding', 'programming', 'students'],
+  description:
+    'NGN Hacks is a free, beginner-friendly 48-hour online hackathon for Ontario high school students. Build on Discord, submit on Devpost — April 24–26, 2026.',
+  keywords: ['hackathon', 'Ontario', 'high school', 'online', 'Discord', 'Devpost', 'students'],
   openGraph: {
-    title: 'York Region High School Hackathon | NGN Hacks',
-    description: 'Next Generation Hacks is a York Region high school hackathon where 100+ students build real projects, learn fast, and present what they create.',
+    title: 'NGN Hacks 2026 | 48-Hour Online Hackathon',
+    description:
+      'Free online hackathon for Ontario high school students. 48 hours on Discord & Devpost — no experience required.',
     type: 'website',
     url: 'https://ngnhacks.ca',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'NGN Hacks' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'York Region High School Hackathon | NGN Hacks',
-    description: 'Next Generation Hacks is a York Region high school hackathon where 100+ students build real projects.',
+    title: 'NGN Hacks 2026 | 48-Hour Online Hackathon',
+    description:
+      'Free online hackathon for Ontario high school students. Discord + Devpost. April 24–26, 2026.',
     images: ['/og.png'],
   },
 };

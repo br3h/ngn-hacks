@@ -4,51 +4,36 @@ export interface ScheduleItem {
   description?: string;
 }
 
+/** High-level online event flow (all times ET). */
 export const SCHEDULE_ITEMS: ScheduleItem[] = [
   {
-    time: '9:00 AM',
-    title: 'Check-in',
-    description: 'Registration and welcome',
+    time: 'Fri · 6:00 PM',
+    title: 'Opening ceremony',
+    description: 'Kickoff, rules, and beginner orientation — live on Discord',
   },
   {
-    time: '9:30 AM',
-    title: 'Opening + Rules',
-    description: 'Event kickoff and guidelines',
+    time: 'Fri evening',
+    title: 'Design process workshop',
+    description: 'Frame a real student problem and plan your build',
   },
   {
-    time: '10:00 AM',
-    title: 'Hacking starts',
-    description: 'Time to build!',
+    time: 'Sat',
+    title: 'Workshop day',
+    description: 'Web dev, GitHub, hosting & no-code, AI tools, plus office hours',
   },
   {
-    time: '12:30 PM',
-    title: 'Lunch',
-    description: 'Break and networking',
+    time: 'Sun',
+    title: 'Final sprint & office hours',
+    description: 'Last help before submissions close',
   },
   {
-    time: '2:00 PM',
-    title: 'Workshop block',
-    description: 'Learn something new',
+    time: 'Sun · 6:00 PM',
+    title: 'Submission deadline',
+    description: 'Upload your project on Devpost before the cutoff',
   },
   {
-    time: '4:30 PM',
-    title: 'Submissions due',
-    description: 'Finalize your project',
-  },
-  {
-    time: '5:00 PM',
-    title: 'Demos',
-    description: 'Present your work',
-  },
-  {
-    time: '6:00 PM',
-    title: 'Awards',
-    description: 'Recognition and prizes',
-  },
-  {
-    time: '6:30 PM',
-    title: 'Wrap-up',
-    description: 'Closing remarks',
+    time: 'After judging',
+    title: 'Results & celebration',
+    description: 'Winners announced after review — details shared in Discord',
   },
 ];
-

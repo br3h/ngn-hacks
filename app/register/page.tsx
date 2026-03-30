@@ -11,7 +11,7 @@ import { SITE_CONFIG, CONTACT_SUBJECTS } from '@/src/lib/site';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Users, Briefcase, Mail, Instagram, MapPin, Calendar, Clock, DollarSign, UtensilsCrossed, BookOpen } from 'lucide-react';
+import { ArrowLeft, Users, Briefcase, Mail, Instagram, Calendar, Clock, DollarSign, BookOpen, Globe, Monitor, MessageCircle, Layers, CheckCircle2, Sparkles, UsersRound } from 'lucide-react';
 
 export default function RegisterPage() {
   const [participantForm, setParticipantForm] = useState({
@@ -265,12 +265,12 @@ export default function RegisterPage() {
               />
             </div>
             <AnimatedText 
-              text="Register for Next Generation Hacks" 
+              text="Register for NGN Hacks 2026" 
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-4"
               speed={50}
             />
-            <p className="text-xl text-gray-400">
-              Join York Region's premier high school hackathon
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              A free 48-hour online hackathon for Ontario high school students · Discord + Devpost
             </p>
           </div>
         </div>
@@ -282,49 +282,86 @@ export default function RegisterPage() {
           <SectionHeader title="Event Details" />
           <div className="max-w-4xl mx-auto">
             <Card className="border-0">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <Sparkles className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 mb-1">Location</div>
-                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.location}</div>
+                      <div className="text-sm text-gray-400 mb-1">Event name</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.eventName}</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <Calendar className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 mb-1">Date</div>
-                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.date}</div>
+                      <div className="text-sm text-gray-400 mb-1">When</div>
+                      <div className="text-lg font-semibold text-white leading-snug">{SITE_CONFIG.dateRangeFull}</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <Clock className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 mb-1">Time</div>
-                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.time}</div>
+                      <div className="text-sm text-gray-400 mb-1">Duration</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.duration}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Monitor className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Format</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.format}</div>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <DollarSign className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <MessageCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 mb-1">Cost</div>
-                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.cost}</div>
+                      <div className="text-sm text-gray-400 mb-1">Communication</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.platformDiscord}</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <UtensilsCrossed className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <Layers className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 mb-1">Food</div>
-                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.food}</div>
+                      <div className="text-sm text-gray-400 mb-1">Submissions</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.platformDevpost}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle2 className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Registration</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.registrationNote}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <UsersRound className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Eligibility & teams</div>
+                      <div className="text-lg font-semibold text-white leading-snug">
+                        {SITE_CONFIG.eligibility} · Teams of {SITE_CONFIG.teamSize}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Globe className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Hosted on</div>
+                      <div className="text-lg font-semibold text-white">{SITE_CONFIG.platformShort}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <DollarSign className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Cost</div>
+                      <div className="text-lg font-semibold text-white">Completely free</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <BookOpen className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 mb-1">Workshops</div>
+                      <div className="text-sm text-gray-400 mb-1">Workshops & support</div>
                       <ul className="space-y-1 mt-2">
                         {SITE_CONFIG.workshops.map((workshop, index) => (
                           <li key={index} className="text-gray-300 flex items-center">
@@ -351,7 +388,7 @@ export default function RegisterPage() {
               <h2 className="text-3xl font-bold text-white">Participant Registration</h2>
             </div>
             <p className="text-gray-400 mb-8">
-              Register as a participant to build, learn, and showcase your project at Next Generation Hacks.
+              Register as a participant for NGN Hacks 2026 — build online, learn with workshops, and submit on Devpost.
             </p>
 
             <form onSubmit={handleParticipantSubmit} className="space-y-6">
@@ -521,7 +558,7 @@ export default function RegisterPage() {
 
               <div>
                 <label htmlFor="dietaryRestrictions" className="block text-sm font-medium text-gray-300 mb-2">
-                  Dietary Restrictions
+                  Accessibility or other notes (optional)
                 </label>
                 <textarea
                   id="dietaryRestrictions"
@@ -530,7 +567,7 @@ export default function RegisterPage() {
                   value={participantForm.dietaryRestrictions}
                   onChange={handleParticipantChange}
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                  placeholder="Any dietary restrictions or allergies"
+                  placeholder="Anything we should know to support your participation"
                 />
               </div>
 
@@ -562,7 +599,7 @@ export default function RegisterPage() {
               <h2 className="text-3xl font-bold text-white">Get Involved</h2>
             </div>
             <p className="text-gray-400 mb-8">
-              Want to sponsor, volunteer, or mentor at Next Generation Hacks? We'd love to have you!
+              Want to sponsor, volunteer, or mentor at NGN Hacks? We&apos;d love to have you!
             </p>
 
             <a
